@@ -3,12 +3,12 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "FeNAgO",
+  appName: "Run Smart",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
-    "The NextJS boilerplate with all you need to build your SaaS, AI tool, or any other web app.",
+    "All-in-one training and nutrition app for ambitious runners. Run farther, recover faster, fuel smarter.",
   // REQUIRED (no https://, not trailing slash at the end, just the naked domain)
-  domainName: "fenago.com",
+  domainName: "runsmart.com",
   crisp: {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (resend.supportEmail) otherwise customer support won't work.
     id: "",
@@ -25,20 +25,22 @@ const config = {
             ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
             : "price_456",
         //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Starter",
+        name: "Monthly",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
+        description: "Flexibility for your training journey",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 99,
+        price: 29,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 149,
+        priceAnchor: 39,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Personalized training plans",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "Smart nutrition strategy" },
+          { name: "Recovery optimization" },
+          { name: "Progress analytics" },
+          { name: "Mobile app access" },
+          { name: "7-day free trial" },
         ],
       },
       {
@@ -48,19 +50,19 @@ const config = {
             : "price_456",
         // This plan will look different on the pricing page, it will be highlighted. You can only have one plan with isFeatured: true
         isFeatured: true,
-        name: "Advanced",
-        description: "You need more power",
-        price: 149,
-        priceAnchor: 299,
+        name: "Annual",
+        description: "Best value for committed athletes",
+        price: 249,
+        priceAnchor: 348,
         features: [
           {
-            name: "Agentic SaaS app NextJS boilerplate",
+            name: "Everything in Monthly",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          { name: "Priority support" },
+          { name: "Advanced analytics dashboard" },
+          { name: "Race strategy consultation" },
+          { name: "Nutrition meal plans" },
+          { name: "Save $99 per year" },
         ],
       },
     ],
@@ -73,11 +75,11 @@ const config = {
   },
   resend: {
     // REQUIRED — Email 'From' field to be used when sending magic login links
-    fromNoReply: `FeNAgO <noreply@resend.fenago.com>`,
+    fromNoReply: `Run Smart <noreply@runsmart.com>`,
     // REQUIRED — Email 'From' field to be used when sending other emails, like abandoned carts, updates etc..
-    fromAdmin: `Dr Lee at FeNAgO <drlee@resend.fenago.com>`,
+    fromAdmin: `Run Smart Team <support@runsmart.com>`,
     // Email shown to customer if they need support. Leave empty if not needed => if empty, set up Crisp above, otherwise you won't be able to offer customer support."
-    supportEmail: "socrates.73@gmail.com",
+    supportEmail: "support@runsmart.com",
   },
   colors: {
     // REQUIRED — The DaisyUI theme to use (added to the main layout.js). Leave blank for default (light & dark mode). If you use any theme other than light/dark, you need to add it in config.tailwind.js in daisyui.themes.

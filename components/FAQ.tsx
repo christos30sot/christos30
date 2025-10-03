@@ -13,22 +13,51 @@ interface FAQItemProps {
 
 const faqList: FAQItemProps[] = [
   {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+    question: "Is Run Smart suitable for beginners or just experienced runners?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Run Smart works for all fitness levels. Whether you&apos;re training for your first 5K or targeting a sub-3-hour marathon, our AI-powered platform adapts to your current fitness level, schedule constraints, and goals. The app scales the training intensity and volume appropriately for your experience.
+      </div>
+    ),
   },
   {
-    question: "Can I get a refund?",
+    question: "How much time do I need to commit each week?",
     answer: (
       <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
+        Our training plans are flexible and designed for busy professionals. Most plans range from 3-6 hours per week, broken into manageable sessions that fit around work and family commitments. You tell us your availability, and we optimize your training within those constraints.
       </p>
     ),
   },
   {
-    question: "I have another question",
+    question: "What makes Run Smart different from free training plans online?",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <div className="space-y-2 leading-relaxed">
+        Run Smart provides personalized, adaptive training that adjusts to your progress, recovery status, and schedule changes. Unlike static plans, we integrate training, nutrition, and recovery strategies tailored to you. Plus, our evidence-based approach eliminates information overload and conflicting advice.
+      </div>
+    ),
+  },
+  {
+    question: "Do I need special equipment or a gym membership?",
+    answer: (
+      <p>
+        No special equipment required beyond good running shoes. All training sessions can be completed outdoors or on a treadmill. Recovery exercises use bodyweight movements, though we provide alternatives if you have access to basic equipment like resistance bands or foam rollers.
+      </p>
+    ),
+  },
+  {
+    question: "Can I cancel my subscription anytime?",
+    answer: (
+      <p>
+        Absolutely. You can cancel your subscription at any time with no penalties or hidden fees. Your access continues until the end of your current billing period. We also offer a 7-day free trial so you can experience the full platform risk-free before committing.
+      </p>
+    ),
+  },
+  {
+    question: "Will this help me avoid injuries?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Injury prevention is built into every aspect of Run Smart. Our progressive training loads, mandatory recovery protocols, and nutrition guidance work together to keep you healthy. We monitor training stress and automatically adjust intensity when you need extra recovery. That said, always listen to your body and consult a healthcare professional for any concerns.
+      </div>
     ),
   },
 ];
@@ -99,8 +128,8 @@ const FAQ = () => {
       <div className="py-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         <div className="flex flex-col text-left basis-1/2">
           <p className="inline-block font-semibold text-primary mb-4">FAQ</p>
-          <p className="sm:text-4xl text-3xl font-extrabold text-base-content">
-            Frequently Asked Questions
+          <p className="sm:text-4xl text-3xl font-heading font-extrabold text-neutral">
+            Questions from runners like you
           </p>
         </div>
 

@@ -2,6 +2,7 @@ import { Suspense, ReactNode } from 'react';
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
+import BenefitsData from "@/components/BenefitsData";
 import FeaturesAccordion from "@/components/FeaturesAccordion";
 import Pricing from "@/components/Pricing";
 import Testimonials3 from "@/components/Testimonials3";
@@ -12,9 +13,9 @@ import { Metadata } from 'next';
 
 // Add metadata for SEO
 export const metadata: Metadata = {
-  title: 'FeNAgO - Agentic AI SaaS Platform Template',
-  description: 'The complete platform for building agentic AI-powered SaaS products—ideal for students, developers, startups, and entrepreneurs looking to innovate rapidly. In the near future, every traditional SaaS application will inevitably be surpassed by an Agentic SaaS solution, redefining the competitive landscape.',
-  keywords: 'agentic AI, SaaS template, AI platform, DrLee, AI development, FeNAgO, AI startup',
+  title: 'Run Smart - All-in-One Training & Nutrition App for Ambitious Runners',
+  description: 'Run farther, recover faster, fuel smarter. The intelligent training and nutrition platform designed for busy professionals. Personalized plans, evidence-based nutrition, and recovery optimization in one app.',
+  keywords: 'running app, training app, marathon training, triathlon training, running nutrition, recovery optimization, personalized training plans, running performance, endurance training',
 };
 
 export default function Home(): JSX.Element {
@@ -24,12 +25,12 @@ export default function Home(): JSX.Element {
         <Header />
       </Suspense>
       <main>
-        {/* FeNAgO - The complete platform for building agentic AI-powered SaaS products */}
         <Hero />
         <Problem />
+        <BenefitsData />
         <FeaturesAccordion />
-        <Pricing />
         <Testimonials3 />
+        <Pricing />
         <FAQ />
         <CTA />
       </main>

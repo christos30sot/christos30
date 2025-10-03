@@ -10,10 +10,13 @@ const Pricing = () => {
     <section className="bg-base-200 overflow-hidden" id="pricing">
       <div className="py-24 px-8 max-w-5xl mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
-          <p className="font-medium text-primary mb-8">Pricing</p>
-          <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
-            Save hours of repetitive code and ship faster!
+          <p className="font-semibold text-primary mb-4 text-sm uppercase tracking-wide">Pricing</p>
+          <h2 className="font-heading font-extrabold text-4xl lg:text-5xl tracking-tight text-neutral mb-4">
+            Invest in your performance
           </h2>
+          <p className="text-lg text-neutral/70 max-w-2xl mx-auto">
+            Choose the plan that fits your training goals. All plans include full access to personalized training, nutrition strategy, and recovery optimization.
+          </p>
         </div>
 
         <div className="relative flex justify-center flex-col lg:flex-row items-center lg:items-stretch gap-8">
@@ -92,7 +95,7 @@ const Pricing = () => {
                   <ButtonCheckout priceId={plan.priceId} />
 
                   <p className="flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative">
-                    Pay once. Access forever.
+                    {plan.name === "Annual" ? "Best value • Save $99/year" : "Cancel anytime • 7-day free trial"}
                   </p>
                 </div>
               </div>
